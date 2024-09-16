@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.upload-area {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  background-color: #333333;
+}
+
+.card {
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.remove-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ff4d4f;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .remove-icon {
+  opacity: 1;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: #000;
+  max-height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+.form-control {
+  width: 80px; /* Увеличили ширину поля */
+}
+
+@media (max-width: 768px) {
+  .form-row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card-img-top {
+      max-height: 150px;
+  }
+}
+.drop-zone {
+  border: 2px dashed #ffffff; /* Светлая пунктирная линия */
+  border-radius: 10px; /* Закругленные края */
+  padding: 20px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px; /* Отступ для визуальной гармонии */
+}
+
+.drop-zone.highlight {
+  border-color: #00ff00; /* Изменение цвета границы при наведении */
+}

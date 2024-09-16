@@ -1,0 +1,5 @@
+Flask
+Pillow
+cairosvg
+requests
+flask-cors
